@@ -32,13 +32,10 @@ function formHandler(event){
  
     //name,surname,email,password ve approve değeri varsa çalışsın istiyorum.
     if(NAME.value && SURNAME.value && EMAIL.value && PASSWORD.value && APPROVE.value){
-        
+        //passwordControl(PASSWORD.value,APPROVE.value)
         //fonksiyonu çağırıyorum.
         addItem(NAME.value,SURNAME.value,EMAIL.value)
-        if(passwordControl(true)){
-            passwordControl(PASSWORD.value, APPROVE.value)
-
-        }
+        
         
         //göderdikten sonra sıfırladık.
         NAME.value = ""
@@ -56,6 +53,7 @@ function formHandler(event){
 }
 
 /*----------------passwordControl FUNCTION---------------------*/
+/*
 function passwordControl(password,approve){  
 
     let PASSWORD = document.querySelector('#password')
@@ -88,6 +86,7 @@ function passwordControl(password,approve){
         }
     }
 }
+*/
 
 let userListDOM = document.querySelector('#userList')
 
